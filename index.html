@@ -10,23 +10,5 @@
     </head>
     <body>
         <h1>Java Downlink</h1>
-        <div id="box" style="position: absolute; left: 100px; top: 100px; width: 200px; height: 200px; background-color: red;"></div>
-<script>
-  var box = document.getElementById('box');
-  function listenPosition() {
-    var x = box.getBoundingClientRect().left + window.pageXOffset;
-    var y = box.getBoundingClientRect().top + window.pageYOffset;
-    var width = box.getBoundingClientRect().width;
-    var height = box.getBoundingClientRect().height;
-    // 可以在这里对x、y、width、height进行进一步处理，例如限制范围、增加动画效果等
-    box.style.left = x + 'px';
-    box.style.top = y + 'px';
-    box.style.width = width + 'px';
-    box.style.height = height + 'px';
-  }
-  window.addEventListener('resize', listenPosition);
-  window.addEventListener('scroll', listenPosition);
-  listenPosition(); // 初始化
-</script>
     </body>
 </html>
